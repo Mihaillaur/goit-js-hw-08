@@ -10,7 +10,7 @@ function time(obj){
     localStorage.setItem('currentTime', JSON.stringify(seconds));
     }
 
-const timeVideo = localStorage.getItem('currentTime');
+const timeVideo = localStorage.getItem('currentTime') || 0;
     console.log(timeVideo);
 
 player.on('timeupdate', throttle(time, 1000));

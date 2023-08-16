@@ -20,25 +20,6 @@ const instance = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
  });
 
- container.addEventListener("click", handlerClick);
-
-function handlerClick(evt) {
-  evt.preventDefault()
-  if(evt.target === evt.currentTarget){
-    return
-  }
-
-const modalImage = evt.target.dataset.source;
-
-const modalClose = (eventEsc,) => {
-  if(eventEsc.key === "Escape"){
-    instance.close();
-
-    document.removeEventListener("keydown", modalClose);
-  }
-}
-document.addEventListener("keydown", modalClose);
-};
 
 
 
