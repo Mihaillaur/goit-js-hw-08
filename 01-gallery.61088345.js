@@ -2,5 +2,5 @@
         <li class="gallery__item">
     <a class="gallery__link" href="${e}">
        <img class="gallery__image" src="${t}" 
-       alt="${o}" /></a></li>`).join(""));let h=new(e&&e.__esModule?e.default:e)(".gallery a",{captionsData:"alt",captionDelay:250});c.addEventListener("click",function(t){if(t.preventDefault(),t.target===t.currentTarget)return;t.target.dataset.source;let e=t=>{"Escape"===t.key&&(h.close(),document.removeEventListener("keydown",e))};document.addEventListener("keydown",e)})}();
-//# sourceMappingURL=01-gallery.646446fe.js.map
+       alt="${o}" /></a></li>`).join("")),new(e&&e.__esModule?e.default:e)(".gallery a",{captionsData:"alt",captionDelay:250})}();
+//# sourceMappingURL=01-gallery.61088345.js.map
